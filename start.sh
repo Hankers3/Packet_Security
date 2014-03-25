@@ -7,4 +7,4 @@
 #!/bin/sh
 sudo /sbin/iptables -A OUTPUT -p tcp -j NFQUEUE --queue-num 0
 sudo ./test
-sudo /sbin/iptables -F
+sudo /sbin/iptables -F OUTPUT
